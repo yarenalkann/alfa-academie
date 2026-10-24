@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,21 @@
   <!-- Google Fonts & Font Awesome İkonları -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Üst Bar / İletişim -->
   <header class="navbar">
     <div class="container nav-content">
       <div class="logo">
-        <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <span class="nav-logo-box">
+          <img src="images/logo.png" alt="Alfa Academie Logo" class="nav-logo-img">
+        </span>
         <div>
           <span class="brand-name">ALFA ACADEMIE</span>
           <span class="brand-slogan">SAMEN NAAR SUCCES!</span>
@@ -38,10 +43,11 @@
       <div class="hero-text">
         <span class="badge">Persoonlijke Begeleiding & Online Lessen</span>
         <h1>Haal het beste uit jezelf met <span>Alfa Academie</span></h1>
-        <p>Professionele bijles en begeleiding in Wiskunde, Rekenen, Cito-training en Nederlands als tweede taal (NT2). Bereik jouw studiedoelen met persoonlijke aandacht.</p>
+        <p>Professionele bijles en begeleiding in Wiskunde, Rekenen, Cito-training en Nederlands als tweede taal (NT2).
+          Bereik jouw studiedoelen met persoonlijke aandacht.</p>
         <div class="hero-actions">
           <a href="#aanmelden" class="btn-primary btn-large">Gratis Kennismaking Aanvragen</a>
-          <a href="https://wa.me/31600000000" target="_blank" class="btn-outline btn-large">
+          <a href="https://wa.me/31684738117" target="_blank" class="btn-outline btn-large">
             <i class="fa-brands fa-whatsapp"></i> WhatsApp Contact
           </a>
         </div>
@@ -67,7 +73,8 @@
       <div class="cards-grid">
         <!-- Wiskunde -->
         <div class="card">
-          <img src="images/bijles-wiskunde.jpeg" alt="Wiskunde Bijles" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+          8 <img src="images/bijles-wiskunde.jpeg" alt="Wiskunde Bijles"
+            style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
           <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
           <h3>Wiskunde (A / B)</h3>
           <p>Onderbouw & Bovenbouw VMBO, HAVO en VWO. Examentraining en heldere uitleg van lastige theorieën.</p>
@@ -84,14 +91,16 @@
         <div class="card featured-card">
           <div class="card-icon"><i class="fa-solid fa-comments"></i></div>
           <h3>NT2 (Nederlands als 2e Taal)</h3>
-          <p>Speciaal voor nieuwkomers en volwassenen in Nederland. Snel en zelfverzekerd Nederlands leren spreken en schrijven.</p>
+          <p>Speciaal voor nieuwkomers en volwassenen in Nederland. Snel en zelfverzekerd Nederlands leren spreken en
+            schrijven.</p>
         </div>
 
         <!-- Cito -->
         <div class="card">
           <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
           <h3>Cito & Doorstroomtoets</h3>
-          <p>Groep 7 en Groep 8 leerlingen voorbereiden op de centrale doorstroomtoets voor de beste middelbare schoolkeuze.</p>
+          <p>Groep 7 en Groep 8 leerlingen voorbereiden op de centrale doorstroomtoets voor de beste middelbare
+            schoolkeuze.</p>
         </div>
 
         <!-- Coaching -->
@@ -110,7 +119,8 @@
       <div class="teaser-text">
         <span class="badge badge-light">Binnenkort Beschikbaar</span>
         <h2>Alfa Online Videoportaal & Vragenbank</h2>
-        <p>Binnenkort kun je via ons online platform 24/7 uitlegvideo's bekijken, oefentoetsen downloaden en direct vragen stellen aan onze docenten.</p>
+        <p>Binnenkort kun je via ons online platform 24/7 uitlegvideo's bekijken, oefentoetsen downloaden en direct
+          vragen stellen aan onze docenten.</p>
       </div>
       <div class="teaser-box">
         <i class="fa-solid fa-play-circle play-icon"></i>
@@ -127,66 +137,81 @@
         <p>Vul het formulier in en we nemen binnen 24 uur contact met je op.</p>
       </div>
 
-      <form id="contactForm" class="contact-form">
+      <form id="contactForm" action="https://formspree.io/f/mgaavokn" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label for="naam">Naam en Achternaam *</label>
-            <input type="text" id="naam" required placeholder="bijv. Jan Jansen">
+            <input type="text" id="naam" name="naam" placeholder="bijv. Jan Jansen" required>
           </div>
           <div class="form-group">
             <label for="email">E-mailadres *</label>
-            <input type="email" id="email" required placeholder="bijv. info@alfaacademie.nl">
+            <input type="email" id="email" name="email" placeholder="bijv. info@alfaacademie.nl" required>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
             <label for="telefoon">Telefoonnummer / WhatsApp *</label>
-            <input type="tel" id="telefoon" required placeholder="bijv. +31 6 12345678">
+            <input type="tel" id="telefoon" name="telefoon" placeholder="bijv. +31 6 12345f678" required>
           </div>
           <div class="form-group">
             <label for="vak">Gewenste Les *</label>
-            <select id="vak" required>
+            <select id="vak" name="vak" required>
               <option value="" disabled selected>Kies een les / vak</option>
-              <option value="Wiskunde">Wiskunde</option>
-              <option value="Rekenen">Rekenen</option>
-              <option value="NT2">NT2 (Nederlands 2e Taal)</option>
-              <option value="Cito">Cito Training (Groep 7/8)</option>
-              <option value="Coaching">Coaching & Studiebegeleiding</option>
+              <option value="Wiskunde (A/B)">Wiskunde (A / B)</option>
+              <option value="Rekenen (Basisschool & MBO)">Rekenen (Basisschool & MBO)</option>
+              <option value="NT2 (Nederlands als 2e Taal)">NT2 (Nederlands als 2e Taal)</option>
+              <option value="Cito & Doorstroomtoets">Cito & Doorstroomtoets</option>
+              <option value="Coaching & Studiebegeleiding">Coaching & Studiebegeleiding</option>
             </select>
           </div>
         </div>
 
         <div class="form-group">
           <label for="bericht">Opmerkingen of Vragen (optioneel)</label>
-          <textarea id="bericht" rows="4" placeholder="Vertel kort over het huidige niveau en de doelen..."></textarea>
+          <textarea id="bericht" name="bericht" rows="4"
+            placeholder="Vertel kort over het huidige niveau en de doelen..."></textarea>
         </div>
 
-        <button type="submit" class="btn-primary btn-large btn-block">Aanmelding Versturen</button>
-        <p id="formFeedback" class="form-feedback"></p>
+        <button type="submit" class="btn-primary btn-block btn-large" id="formSubmitBtn">Aanmelding Versturen</button>
+        <div id="formFeedback" class="form-feedback"></div>
       </form>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-col">
-        <h3>ALFA ACADEMIE</h3>
-        <p>Samen Naar Succes! Professionele onderwijsondersteuning in Nederland.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p><i class="fa-solid fa-globe"></i> www.alfaacademie.nl</p>
-        <p><i class="fa-solid fa-envelope"></i> contact@alfaacademie.nl</p>
-        <p><i class="fa-brands fa-whatsapp"></i> +31 6 00000000</p>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2026 Alfa Academie. Alle rechten voorbehouden.</p>
-    </div>
-  </footer>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-content">
+          <div class="footer-col">
+            <img src="images/logo.png" alt="Alfa Academie Logo"
+              style="width: 70px; height: 70px; object-fit: contain; margin-bottom: 12px;">
+            <h3>ALFA ACADEMIE</h3>
+            <p>Samen Naar Succes! Professionele onderwijsondersteuning in Nederland.</p>
+          </div>
 
-  <script src="script.js"></script>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p><i class="fa-solid fa-globe"></i> www.alfaacademie.nl</p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:alfaacademienl@gmail.com"
+                style="color: inherit; text-decoration: none;">alfaacademienl@gmail.com</a></p>
+            <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/31684738117" target="_blank" style="color: inherit; text-decoration: none;">+31 6 84738117</a></p>
+          </div>
+
+          <div class="footer-col footer-social">
+            <h4>Volg Ons</h4>
+            <a href="https://www.instagram.com/alfaacademie" target="_blank" class="social-link">
+              <i class="fa-brands fa-instagram"></i> @alfaacademie
+            </a>
+            <div class="qr-container">
+              <img src="images/instagram-qr.jpeg" alt="Instagram QR Code" class="footer-qr">
+              <span>Scan om te volgen</span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2026 Alfa Academie. Alle rechten voorbehouden.</p>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
 </body>
+
 </html>
