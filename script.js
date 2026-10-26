@@ -11,9 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
         submitBtn.disabled = true;
         submitBtn.innerText = "Verzenden...";
       }
+
+      // Yeni gönderim başlarken bildirim kutusunu temizle ve gizle
       if (feedback) {
         feedback.innerText = "";
-        feedback.style.color = "#1E293B";
+        feedback.style.display = "none";
       }
 
       const formData = new FormData(form);
@@ -29,19 +31,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (response.ok) {
           if (feedback) {
-            feedback.style.color = "#10B981";
+            feedback.style.display = "block";
+            feedback.style.backgroundColor = "#ecfdf5";
+            feedback.style.borderColor = "#a7f3d0";
+            feedback.style.color = "#065f46";
             feedback.innerText = "Bedankt voor je aanmelding! We nemen binnen 24 uur contact met je op.";
           }
           form.reset();
         } else {
           if (feedback) {
-            feedback.style.color = "#EF4444";
+            feedback.style.display = "block";
+            feedback.style.backgroundColor = "#fef2f2";
+            feedback.style.borderColor = "#fecaca";
+            feedback.style.color = "#991b1b";
             feedback.innerText = "Er is iets misgegaan. Probeer het later opnieuw.";
           }
         }
       } catch (error) {
         if (feedback) {
-          feedback.style.color = "#EF4444";
+          feedback.style.display = "block";
+          feedback.style.backgroundColor = "#fef2f2";
+          feedback.style.borderColor = "#fecaca";
+          feedback.style.color = "#991b1b";
           feedback.innerText = "Er is een verbindingsfout opgetreden. Probeer het later opnieuw.";
         }
       } finally {
