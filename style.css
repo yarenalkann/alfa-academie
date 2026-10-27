@@ -68,8 +68,8 @@ body {
 .nav-logo-img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;
-  transform: scale(1.8) translate(7%, 2.5%);
+  object-fit: contain !important;
+  border-radius: 50%;
   display: block;
 }
 
