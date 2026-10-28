@@ -474,28 +474,13 @@ body {
 /* Dersler Grid ve Kart Düzeni (2. Görseldeki Gibi) */
 /* Dersler Grid Düzeni & 2 Kartı Ortaya Hizalama */
 .lessons-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
 /* Üst sıradaki 3 kart (2'şer kolon: toplam 6) */
-.lessons-grid .lesson-card:nth-child(1),
-.lessons-grid .lesson-card:nth-child(2),
-.lessons-grid .lesson-card:nth-child(3) {
-  grid-column: span 2;
-}
 
-/* Alt sıradaki 4. kart 2. kolondan başlar ve ortalanır */
-.lessons-grid .lesson-card:nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
-/* Alt sıradaki 5. kart yanına oturur */
-.lessons-grid .lesson-card:nth-child(5) {
-  grid-column: 4 / span 2;
-}
 
 /* Kart Genel Stili */
 .lesson-card {
